@@ -1,6 +1,4 @@
-import logo from "../../assets/logo.svg";
-import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
-
+import { NavigationMenu } from "../NavigationMenu/NavigationMenu";
 import "./NavBar.css";
 
 export function NavBar() {
@@ -18,25 +16,7 @@ export function NavBar() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <a className="navbar-brand">
-            <img src={logo} alt="logo" />
-          </a>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Classes
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Lessons
-            </a>
-          </li>
-
-          <DropdownMenu />
-        </ul>
-      </div>
+      <NavigationMenu />
     </nav>
   );
 }
