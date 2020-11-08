@@ -8,7 +8,7 @@ export const userSlice = createSlice({
   },
   reducers: {
     switchUser: state => {
-      state.value = state.value.name === accounts[0].name ? accounts[1] : accounts[0] //TODO: better logic to switch accounts
+      state.value = state.value.id === accounts[0].id ? accounts[1] : accounts[0] //TODO: better logic to switch accounts
     }
   },
 });

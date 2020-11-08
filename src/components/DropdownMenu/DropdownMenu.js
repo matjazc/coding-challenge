@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, switchUser } from "../../app/userSlice";
+import { accounts } from "../../utils/accounts";
 
 export function DropdownMenu() {
   const user = useSelector(selectUser);
@@ -16,11 +17,11 @@ export function DropdownMenu() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        { user.name}
+        { user.id}
       </a>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
         <a className="dropdown-item" href="#" onClick={() => dispatch(switchUser())}>
-          Switch user
+          { user.id === accounts[0].id ? accounts[1].id : accounts[0].id }
         </a>
         <a className="dropdown-item" href="#">
           Settings
