@@ -3,7 +3,10 @@ import "./NavBar.css";
 
 export function NavBar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-dark">
+    <nav
+      className="navbar navbar-expand-md navbar-light bg-dark"
+      data-cy="navBar"
+    >
       <button
         className="navbar-toggler"
         type="button"
@@ -15,7 +18,6 @@ export function NavBar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-
       <NavigationMenu />
     </nav>
   );
