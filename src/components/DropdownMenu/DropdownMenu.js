@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectUser, switchUser } from "../../app/userSlice";
 
 export function DropdownMenu() {
-  const isTeacher = useSelector(selectUser);
+  const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
   return (
@@ -16,11 +16,11 @@ export function DropdownMenu() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        { isTeacher ? "teacher@school.org" : "student@school.org"}
+        { user.name}
       </a>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
         <a className="dropdown-item" href="#" onClick={() => dispatch(switchUser())}>
-        { isTeacher ? "student@school.org" : "teacher@school.org"}
+        User name
         </a>
         <a className="dropdown-item" href="#">
           Settings

@@ -3,11 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
-    value: true,
+    value: { name: "teacher@school.org", menuItems: ["Lessons", "Libraries"] },
   },
   reducers: {
     switchUser: state => {
-      state.value = !state.value
     }
   },
 });
