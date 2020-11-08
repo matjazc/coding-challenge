@@ -7,7 +7,7 @@ export function DropdownMenu() {
   const dispatch = useDispatch();
 
   return (
-    <li className="nav-item dropdown">
+    <li className="nav-item dropdown" data-cy="dropdown">
       <a
         className="nav-link dropdown-toggle"
         href="#"
@@ -17,11 +17,16 @@ export function DropdownMenu() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        { user.id}
+        {user.id}
       </a>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a className="dropdown-item" href="#" onClick={() => dispatch(switchUser())}>
-          { user.id === accounts[0].id ? accounts[1].id : accounts[0].id }
+        <a
+          className="dropdown-item"
+          href="#"
+          onClick={() => dispatch(switchUser())}
+          data-cy="dropdown-item"
+        >
+          {user.id === accounts[0].id ? accounts[1].id : accounts[0].id}
         </a>
         <a className="dropdown-item" href="#">
           Settings
