@@ -2,7 +2,7 @@ import { NavigationMenu } from "../NavigationMenu/NavigationMenu";
 import "./NavBar.css";
 
 export function NavBar() {
-  return (
+return (
     <nav
       className="navbar navbar-expand-md navbar-light bg-dark"
       data-cy="navBar"
@@ -18,7 +18,9 @@ export function NavBar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <NavigationMenu />
+      <div className="container-fluid">
+        <NavigationMenu />
+      </div>
     </nav>
   );
 }
