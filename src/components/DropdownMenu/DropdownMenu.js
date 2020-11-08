@@ -1,7 +1,9 @@
-import React, { useState } from "react"; //FIXME:
+import { useSelector, useDispatch } from "react-redux";
+import { selectUser, switchUser } from "../../app/userSlice";
 
 export function DropdownMenu() {
-  const [user, setUser] = useState('test@gmail.com');
+  const isTeacher = useSelector(selectUser);
+  const dispatch = useDispatch();
 
   return (
     <li className="nav-item dropdown">
@@ -14,11 +16,11 @@ export function DropdownMenu() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        { user }
+        { isTeacher ? "teacher@school.org" : "student@school.org"}
       </a>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a className="dropdown-item" href="#">
-          { user }
+        <a className="dropdown-item" href="#" onClick={() => dispatch(switchUser())}>
+        { isTeacher ? "student@school.org" : "teacher@school.org"}
         </a>
         <a className="dropdown-item" href="#">
           Settings
