@@ -13,14 +13,14 @@ export function NavigationMenu() {
         <img src={logo} alt="logo" />
       </a>
       <li className="nav-item active">
-        <a className="nav-link" href="#">
+        <a className="nav-link">
           Classes
         </a>
       </li>
       {user.menuItems.map((item, index) => {
         return (
           <li className="nav-item" key={index}>
-            <a className="nav-link" href="#">
+            <a className="nav-link">
               {item}
             </a>
           </li>
