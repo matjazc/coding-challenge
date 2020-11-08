@@ -26,8 +26,8 @@ export function NavigationMenu() {
           </li>
         );
       })}
-      <DropdownMenu />
     </ul>
+    <DropdownMenu />
   </div>
   );
 }
