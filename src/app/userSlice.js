@@ -1,12 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { accounts } from "../utils/accounts";
 
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
-    value: { name: "teacher@school.org", menuItems: ["Lessons", "Libraries"] },
+    value: accounts[0],
   },
   reducers: {
     switchUser: state => {
+      state.value = accounts[1]; //TODO: logic to switch accounts
     }
   },
 });

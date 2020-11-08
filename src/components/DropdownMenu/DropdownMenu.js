@@ -20,7 +20,7 @@ export function DropdownMenu() {
       </a>
       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
         <a className="dropdown-item" href="#" onClick={() => dispatch(switchUser())}>
-        User name
+          Switch user
         </a>
         <a className="dropdown-item" href="#">
           Settings
