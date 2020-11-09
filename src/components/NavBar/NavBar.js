@@ -4,7 +4,7 @@ import "./NavBar.css";
 export function NavBar() {
 return (
     <nav
-      className="navbar navbar-expand-md navbar-light bg-dark"
+      className="navbar navbar-expand-md navbar-light"
       data-cy="navBar"
     >
       <button
