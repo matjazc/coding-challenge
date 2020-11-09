@@ -32,4 +32,5 @@ a.nav-link.dropdown-toggle::after {
 
 .dropdown-item.active, .dropdown-item:active {
   background-color: #A1A9B5;
+  color: #242D38;
 }
