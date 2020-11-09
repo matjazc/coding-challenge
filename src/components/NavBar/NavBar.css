@@ -1,7 +1,18 @@
+.navbar {
+  background-color: #242D38;
+}
+
 .navbar-nav .nav-item .nav-link {
   color: #A1A9B5;
 }
+
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
   color: #FFFFFF;
+}
+
+.navbar-light .navbar-toggler {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  background-color: #A1A9B5;
 }
