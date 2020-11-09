@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../app/userSlice";
 import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
 import logo from "../../assets/logo.svg";
+import "./NavigationMenu.css";
 
 export function NavigationMenu() {
   const user = useSelector(selectUser);
