@@ -2,11 +2,8 @@ import { NavigationMenu } from "../NavigationMenu/NavigationMenu";
 import "./NavBar.css";
 
 export function NavBar() {
-return (
-    <nav
-      className="navbar navbar-expand-md navbar-light"
-      data-cy="navBar"
-    >
+  return (
+    <nav className="navbar navbar-expand-md navbar-light" data-cy="navBar">
       <button
         className="navbar-toggler"
         type="button"
