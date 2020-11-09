@@ -21,7 +21,10 @@ export function DropdownMenu() {
         >
           {user.id}
         </a>
-        <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <div
+          className="dropdown-menu dropdown-menu-right"
+          aria-labelledby="navbarDropdown"
+        >
           <form>
             <a
               className="dropdown-item"
