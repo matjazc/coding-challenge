@@ -28,11 +28,6 @@ it('should change items in navBar if switch user', () => {
   .should('not.contain', 'Lessons')
   .should('not.contain', 'Libraries')
 
-  cy.get('[data-cy=dropdown]')
-  .should('be.visible')
-  .contains('student@school.org')
-  .click()
-
   cy.get('[data-cy=dropdown-item]')
   .should('be.visible')
   .contains('teacher@school.org')
